@@ -1,0 +1,26 @@
+---
+sidebar_position: 1
+---
+
+# DataMart de ventas minoristas
+
+Este sitio reúne la documentación técnica y analítica del proyecto DataMart:
+un pipeline que procesa archivos de ventas, valida su calidad y carga los
+resultados en PostgreSQL.
+
+## Contenido
+
+- [Decisiones técnicas](./decisiones): arquitectura, modelo analítico, reglas
+  de negocio, calidad de datos e idempotencia.
+- [Consultas SQL](./consultas): consultas para responder las preguntas de
+  negocio y auditar los registros rechazados.
+- [Recomendación de producto](./recomendacion): plantilla para sustentar una
+  recomendación con resultados reales.
+- [API del catálogo](./api-productos): endpoints y relación del catálogo con
+  el pipeline.
+
+## Tecnologías
+
+El proceso usa Apache Airflow para orquestación, Python y pandas para
+transformación, PostgreSQL como almacén analítico y Docker Compose para el
+entorno de ejecución.
